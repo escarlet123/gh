@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta al estilo de El Principito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fffbf0;
+            font-family: 'Dancing Script', cursive;
+            color: #5a4a42;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+        }
+        .carta {
+            background: #fff3cd;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            max-width: 500px;
+            position: relative;
+            z-index: 2;
+        }
+        .titulo {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .contenido {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .firma {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .imagen {
+            position: absolute;
+            width: 180px;
+            height: auto;
+            z-index: 1;
+            animation: flotar 3s infinite ease-in-out;
+        }
+        .imagen1 { top: 0.9px; left: 10px; animation-delay: 0.2s; }
+        .imagen2 { top: 10px; right: 10px; animation-delay: 0.4s; }
+        .imagen3 { bottom: 10px; left: 10px; animation-delay: 0.6s; }
+        .imagen4 { bottom: 10px; right: 10px; animation-delay: 0.8s; }
+
+        @keyframes flotar {
+            0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+            50% { transform: translateY(-10px) rotate(2deg); opacity: 1; }
+            100% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.imgur.com/QH2aTOW.jpeg" class="imagen imagen1" alt="El Principito">
+    <img src="https://i.imgur.com/kdiz4XT.jpeg" class="imagen imagen2" alt="El Principito">
+    <img src="https://i.imgur.com/DxMxH9l.jpeg" class="imagen imagen3" alt="El Principito">
+    <img src="https://i.imgur.com/4mEt7bsb.jpg" class="imagen imagen4" alt="El Principito">
+    
+    <div class="carta">
+        <div class="titulo">Para yur</div>
+        <div class="contenido">
+            "Lo esencial es invisible a los ojos".<br>
+            A veces, en medio del universo, encontramos estrellas que nos iluminan
+            con su luz única. Tú eres una de ellas.<br><br>
+            Con cariño,
+        </div>
+        <div class="firma">Tu novio</div>
+    </div>
+</body>
+</html>
